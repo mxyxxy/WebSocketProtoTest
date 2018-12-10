@@ -1,0 +1,11 @@
+package cs;
+
+message C2S_UserInfo {
+    required string name = 1;
+	required string password = 2;
+}
+
+message S2C_UserInfo {
+  required uint32 ret = 1;
+  required string msg = 2;
+}

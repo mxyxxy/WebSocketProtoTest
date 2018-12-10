@@ -1,0 +1,19 @@
+syntax = "proto2";
+
+package cs;
+
+enum ID {
+	//网关中的协议
+	ID_C2S_UserInfo = 10000;
+	ID_S2C_UserInfo = 10001;
+}
+
+message C2S_UserInfo {
+    required string name = 1;
+	required string password = 2;
+}
+
+message S2C_UserInfo {
+  required uint32 ret = 1;
+  required string msg = 2;
+}
